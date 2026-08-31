@@ -59,6 +59,7 @@
       font-size: 1.05rem;
     }
 
+    /* Watch Video button */
     .youtube-btn {
       display: inline-block;
       margin-top: 10px;
@@ -71,6 +72,7 @@
       text-decoration: underline;
     }
 
+    /* Under Construction text */
     .status {
       color: #aaa;
       font-style: italic;
@@ -93,18 +95,28 @@
       margin-top: 4px;
     }
 
+    /* Back to Main Page */
     .back-btn {
       display: inline-block;
-      margin-top: 40px;
       color: #f00;
       text-decoration: none;
+      font-weight: bold;
     }
 
     .back-btn:hover {
       text-decoration: underline;
     }
 
-    /* Mobile responsive layout */
+    .back-top {
+      margin-bottom: 20px;
+    }
+
+    .back-bottom {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    /* Mobile layout */
     @media (max-width: 768px) {
       .projects-container {
         grid-template-columns: 1fr;
@@ -120,7 +132,17 @@
 
 <body>
 
+  <!-- ========================================
+       BACK TO MAIN PAGE - TOP
+  ========================================= -->
+
+  <a href="index.html" class="back-btn back-top">
+    ← Back to Main Page
+  </a>
+
+
   <h1>Projects</h1>
+
 
   <div class="projects-container">
 
@@ -165,8 +187,8 @@
           <strong>EmpathyVR</strong>
           (Jan 2021 – Dec 2024, Next Reality Lab)<br>
 
-          A virtual reality experience designed to explore and study empathy
-          in teenagers through immersive, character-driven scenarios.
+          A virtual reality experience designed to explore and study
+          empathy in teenagers through immersive, character-driven scenarios.
           Contributed to motion capture, 3D modeling, and character animation
           to bring realistic virtual humans to life.<br>
 
@@ -233,10 +255,10 @@
           <strong>Virtual Interview</strong>
           (Jan 2022, Next Reality Lab)<br>
 
-          An AI-based virtual interview content using the EeDM model by
-          analyzing multimodal data and empathy expressions, creating
-          emotionally intelligent evaluations that interpret empathy and
-          emotional traits using multimodal information.<br>
+          An AI-based virtual interview content using the EeDM model
+          by analyzing multimodal data and empathy expressions,
+          creating emotionally intelligent evaluations that interpret
+          empathy and emotional traits using multimodal information.<br>
 
           Skills: Character Creation · Character Animation
         </li>
@@ -248,10 +270,11 @@
           <strong>FPS Game</strong>
           (Sep 2021 – Oct 2021, Ajou University)<br>
 
-          Developed a VR first-person shooter game as an assignment, where
-          the player is trapped in a locked room and must find a key,
-          eliminate all zombies, and escape through the exit gate.
-          Designed for and supported on Oculus Quest 2.<br>
+          Developed a VR first-person shooter game as a university
+          assignment where the player is trapped in a locked room
+          and must find a key, eliminate all zombies, and escape
+          through the exit gate. Designed for and supported on
+          Oculus Quest 2.<br>
 
           Skills: Game Development<br>
 
@@ -296,7 +319,7 @@
         </li>
 
 
-        <!-- SAC ARPS -->
+        <!-- SAC – ARPS System VR -->
 
         <li>
           <strong>SAC – ARPS System VR</strong>
@@ -304,8 +327,8 @@
 
           A VR-based system built for automated role-playing scenarios
           (ARPS) to support social and behavioral training in virtual
-          environments. Involved in mocap setup, 3D asset creation, and
-          animation to support dynamic character interactions.<br>
+          environments. Involved in motion capture setup, 3D asset
+          creation, and animation to support dynamic character interactions.<br>
 
           Skills: Animation · Motion Graphics · 3D Modeling<br>
 
@@ -344,7 +367,7 @@
           <strong>Unreal Engine 4 RPG Battle Field – White Desert</strong>
           (Jan 2019, Ajou University)<br>
 
-          Unreal cinematic project.<br>
+          Unreal Engine cinematic project.<br>
 
           Skills: Cinematics · Concept Development · Video Editing<br>
 
@@ -374,7 +397,7 @@
         </li>
 
 
-        <!-- Film Compositing -->
+        <!-- Film Compositing Assignment -->
 
         <li>
           <strong>Film Compositing Assignment</strong>
@@ -391,7 +414,7 @@
         </li>
 
 
-        <!-- Masterplan -->
+        <!-- Animated Short Movie: Masterplan -->
 
         <li>
           <strong>Animated Short Movie: Masterplan</strong>
@@ -402,43 +425,6 @@
 
           <a
             href="https://youtu.be/nbv5ybPGDxk"
-            target="_blank"
-            class="youtube-btn">
-            Watch Video
-          </a>
-        </li>
-
-
-        <!-- Aero -->
-
-        <li>
-          <strong>Animated Video: Aero</strong>
-          (Jan 2017)<br>
-
-          3D design and creation.<br>
-
-          Skills: Concept Development · 3D Modeling · Animation ·
-          Motion Graphics · Visual Effects · Video Editing<br>
-
-          <a
-            href="https://youtu.be/or52PW_VBII"
-            target="_blank"
-            class="youtube-btn">
-            Watch Video
-          </a>
-        </li>
-
-
-        <!-- Motion Graphics CV -->
-
-        <li>
-          <strong>Motion Graphics CV</strong>
-          (Jan 2016)<br>
-
-          Skills: Concept Development · Motion Graphics · Video Editing<br>
-
-          <a
-            href="https://youtu.be/LEPtav2Zt0A"
             target="_blank"
             class="youtube-btn">
             Watch Video
@@ -463,7 +449,7 @@
       <ul class="project-list">
 
 
-        <!-- Pedestrian Safety Game -->
+        <!-- Pedestrian Safety Educational Game -->
 
         <li>
           <strong>Pedestrian Safety Educational Game</strong>
@@ -485,14 +471,15 @@
           (2026)<br>
 
           Personal product visualization projects exploring 3D modeling,
-          materials, lighting, rendering, product presentation, and
-          promotional visuals.<br><br>
+          materials, lighting, rendering, product presentation,
+          and promotional visuals.<br><br>
 
           <strong>Projects:</strong>
 
           <ul class="personal-subprojects">
 
-            <!-- Lipstick -->
+
+            <!-- Lipstick Product Visualization -->
 
             <li>
               <strong>Lipstick Product Visualization</strong><br>
@@ -500,13 +487,14 @@
               <a
                 href="https://youtu.be/wWqn7TE3568"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="youtube-btn">
                 Watch Video
               </a>
             </li>
 
 
-            <!-- Gorkhe Protein Powder -->
+            <!-- Gorkhe Protein Powder Visualization -->
 
             <li>
               <strong>Gorkhe Protein Powder Visualization</strong><br>
@@ -514,13 +502,14 @@
               <a
                 href="https://youtu.be/DL0wwzvagXw"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="youtube-btn">
                 Watch Video
               </a>
             </li>
 
 
-            <!-- iPhone -->
+            <!-- iPhone Product Visualization -->
 
             <li>
               <strong>iPhone Product Visualization</strong><br>
@@ -528,13 +517,14 @@
               <a
                 href="https://youtu.be/vTI2E049sNU"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="youtube-btn">
                 Watch Video
               </a>
             </li>
 
 
-            <!-- Ray-Ban Meta Glasses -->
+            <!-- Ray-Ban Meta Glasses Visualization -->
 
             <li>
               <strong>Ray-Ban Meta Glasses Visualization</strong><br>
@@ -542,16 +532,56 @@
               <a
                 href="https://youtu.be/Lsg6bzCwun0"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="youtube-btn">
                 Watch Video
               </a>
             </li>
 
+
           </ul>
 
           Skills: Blender · Maya · 3D Modeling · Product Visualization ·
           Materials · Lighting · Rendering
+        </li>
 
+
+        <!-- Animated Video: Aero -->
+
+        <li>
+          <strong>Animated Video: Aero</strong>
+          (Jan 2017)<br>
+
+          3D design and creation.<br>
+
+          Skills: Concept Development · 3D Modeling · Animation ·
+          Motion Graphics · Visual Effects · Video Editing<br>
+
+          <a
+            href="https://youtu.be/or52PW_VBII"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="youtube-btn">
+            Watch Video
+          </a>
+        </li>
+
+
+        <!-- Motion Graphics CV -->
+
+        <li>
+          <strong>Motion Graphics CV</strong>
+          (Jan 2016)<br>
+
+          Skills: Concept Development · Motion Graphics · Video Editing<br>
+
+          <a
+            href="https://youtu.be/LEPtav2Zt0A"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="youtube-btn">
+            Watch Video
+          </a>
         </li>
 
 
@@ -563,9 +593,11 @@
   </div>
 
 
-  <!-- Back Button -->
+  <!-- ========================================
+       BACK TO MAIN PAGE - BOTTOM
+  ========================================= -->
 
-  <a href="index.html" class="back-btn">
+  <a href="index.html" class="back-btn back-bottom">
     ← Back to Main Page
   </a>
 
