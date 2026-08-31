@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
   <title>Sunny Magar | 3D Artist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+    rel="stylesheet"
+  >
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -19,26 +36,37 @@
       background-color: #000;
     }
 
+
+    /* =========================
+       HEADER
+    ========================== */
+
     header {
       background: #000;
       color: #fff;
-      padding: 1rem 1rem;
+      padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
+
+
+    /* Logo */
 
     .logo {
       background: red;
       color: white;
       text-transform: uppercase;
       font-family: 'Arial Black', Gadget, sans-serif;
+
       width: 150px;
       height: 150px;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       text-align: center;
     }
 
@@ -53,6 +81,9 @@
       font-weight: 600;
       line-height: 1.1;
     }
+
+
+    /* Navigation */
 
     nav {
       color: #fff;
@@ -71,6 +102,11 @@
     nav a:hover {
       color: #f00;
     }
+
+
+    /* =========================
+       HERO SECTION
+    ========================== */
 
     .hero {
       display: flex;
@@ -139,6 +175,11 @@
       transform: translateY(-130px);
     }
 
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================== */
+
     section {
       padding: 4rem 1rem;
       max-width: 1100px;
@@ -156,23 +197,11 @@
       margin: 1rem 0 0 1.5rem;
     }
 
-    .skills span {
-      display: inline-block;
-      background: #222;
-      padding: 0.5rem 1rem;
-      margin: 0.3rem;
-      border-radius: 20px;
-      color: #fff;
-    }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #111;
-      color: #ccc;
-    }
+    /* =========================
+       ABOUT
+    ========================== */
 
-    /* About section with image on right */
     #about {
       display: flex;
       justify-content: space-between;
@@ -204,13 +233,110 @@
       object-fit: cover;
     }
 
+
+    /* =========================
+       SKILLS
+    ========================== */
+
+    .skills span {
+      display: inline-block;
+      background: #222;
+      padding: 0.5rem 1rem;
+      margin: 0.3rem;
+      border-radius: 20px;
+      color: #fff;
+    }
+
+
+    /* =========================
+       EXPERIENCE
+    ========================== */
+
+    .job h3 {
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .job p {
+      color: #ccc;
+      margin-bottom: 0.5rem;
+    }
+
+    .job ul {
+      margin-top: 1rem;
+      margin-left: 1.5rem;
+    }
+
+    .job li {
+      margin-bottom: 0.6rem;
+      color: #eee;
+    }
+
+
+    /* =========================
+       PROJECT LINK
+    ========================== */
+
+    .project-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #f00;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       PUBLICATION BUTTON
+    ========================== */
+
+    .publication-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: #f00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .publication-btn:hover {
+      opacity: 0.85;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111;
+      color: #ccc;
+    }
+
+
+    /* =========================
+       MOBILE RESPONSIVE
+    ========================== */
+
     @media(max-width: 768px) {
+
       nav {
         position: static;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+      }
+
+      nav a {
+        margin-left: 0;
       }
 
       header {
@@ -230,7 +356,7 @@
       }
 
       .hero-text .line-bottom {
-        font-size: 0.2rem;
+        font-size: 3.5rem;
       }
 
       .hero-img {
@@ -238,9 +364,10 @@
         padding-left: 0;
       }
 
-      .hero-img img {
+      .hero-img video {
         max-width: 100%;
         height: auto;
+        transform: translateY(0) !important;
       }
 
       #about {
@@ -251,215 +378,602 @@
       .about-img {
         margin-top: 2rem;
       }
+
+      .about-img video {
+        max-width: 100%;
+        height: auto;
+      }
+
     }
+
   </style>
+
 </head>
+
+
 <body>
+
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
   <header>
+
     <div class="logo">
-      <span class="line1">SUNNY</span>
-      <span class="line2">THAPA MAGAR</span>
+
+      <span class="line1">
+        SUNNY
+      </span>
+
+      <span class="line2">
+        THAPA MAGAR
+      </span>
+
     </div>
+
+
     <nav>
+
       <a href="#about">About</a>
+
       <a href="#education">Education</a>
+
       <a href="#skills">Skills</a>
+
       <a href="#experience">Experience</a>
+
       <a href="#projects">Projects</a>
 
       <a href="#publications">Publications</a>
+
       <a href="#patents">Patents</a>
+
       <a href="#contact">Contact</a>
+
     </nav>
+
   </header>
 
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
   <section class="hero">
+
     <div class="hero-text">
+
       <h1>
+
         <span class="tight-heading">
-          <span class="line-top">WELCOME TO MY</span>
-          <span class="line-bottom">WEBSITE</span>
+
+          <span class="line-top">
+            WELCOME TO MY
+          </span>
+
+          <span class="line-bottom">
+            WEBSITE
+          </span>
+
         </span>
+
       </h1>
+
+
       <p>
+
         Ayo Gorkhali..............<br>
+
         From sparks of imagination to realities.
+
       </p>
+
+
       <div class="logo-container">
+
         <a href="#about">
-          <img src="Down.png" alt="Scroll Down" class="red-logo" />
+
+          <img
+            src="Down.png"
+            alt="Scroll Down"
+            class="red-logo"
+          />
+
         </a>
+
       </div>
+
     </div>
+
 
     <div class="hero-img">
-     <video autoplay muted loop playsinline style="max-height: 500px; width: auto; object-fit: contain; transform: translateY(-130px);">
-    <source src="bike.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        style="
+          max-height: 500px;
+          width: auto;
+          object-fit: contain;
+          transform: translateY(-130px);
+        "
+      >
+
+        <source
+          src="bike.mp4"
+          type="video/mp4"
+        />
+
+        Your browser does not support the video tag.
+
+      </video>
+
+    </div>
+
   </section>
+
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
 
   <section id="about">
+
     <div class="about-text">
+
       <h2>About Me</h2>
-      <p>I'm a creatively driven 3D artist, Reseacher & Project Coodinator, with a Ph.D. in Life Media and 7 years of experience supporting and coordinating interactive content, VR, and 3D projects with researchers, </p>
-      <p>I'm passionate about crafting digital experiences, designing virtual humans, and telling stories through motion, animation, and interaction.</p>
-      <p>My expertise spans character creation, motion capture, VR interaction, website and mobile app UI/UX design, motion graphics, video editing, and immersive content development. I enjoy blending artistic vision with technical skills to bring interactive and emotionally engaging ideas to life.</p>
-      <p>I'm always eager to explore new tools, experiment with emerging technologies, and collaborate with those who share a love for innovation and creativity.</p>
-    </div>
-    <div class="about-img">
-        <video autoplay muted loop playsinline style="max-height: 500px; width: auto; object-fit: contain; transform: translateY(10px);">
-    <source src="profile.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
+
+      <p>
+        I'm a creatively driven 3D artist, Researcher & Project Coordinator,
+        with a Ph.D. in Life Media and 7 years of experience supporting
+        and coordinating interactive content, VR, and 3D projects with
+        researchers.
+      </p>
+
+      <p>
+        I'm passionate about crafting digital experiences, designing virtual
+        humans, and telling stories through motion, animation, and interaction.
+      </p>
+
+      <p>
+        My expertise spans character creation, motion capture, VR interaction,
+        website and mobile app UI/UX design, motion graphics, video editing,
+        and immersive content development. I enjoy blending artistic vision
+        with technical skills to bring interactive and emotionally engaging
+        ideas to life.
+      </p>
+
+      <p>
+        I'm always eager to explore new tools, experiment with emerging
+        technologies, and collaborate with those who share a love for
+        innovation and creativity.
+      </p>
 
     </div>
+
+
+    <div class="about-img">
+
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        style="
+          max-height: 500px;
+          width: auto;
+          object-fit: contain;
+          transform: translateY(10px);
+        "
+      >
+
+        <source
+          src="profile.mp4"
+          type="video/mp4"
+        />
+
+        Your browser does not support the video tag.
+
+      </video>
+
+    </div>
+
   </section>
+
+
+  <!-- =========================
+       EDUCATION
+  ========================== -->
 
   <section id="education">
+
     <h2>Education</h2>
-    <p><strong>PhD in Digital Media (Life Media interdisciplinary Program)</strong>, Ajou University, 2025</p>
-      <p>Research focus: Virtual humans, Empathy in VR, Animation pipelines.</p>
-      <p>Thesis: Development of an Efficient Pipeline for Virtual Human Creation Using Accessible Modern Technologies.  
-      <p>Grade: 4.1/4.5 </p>
-</p>
+
+    <p>
+      <strong>
+        PhD in Digital Media (Life Media Interdisciplinary Program)
+      </strong>,
+      Ajou University, 2025
+    </p>
+
+    <p>
+      Research focus: Virtual humans, Empathy in VR, Animation pipelines.
+    </p>
+
+    <p>
+      Thesis: Development of an Efficient Pipeline for Virtual Human Creation
+      Using Accessible Modern Technologies.
+    </p>
+
+    <p>
+      Grade: 4.1/4.5
+    </p>
+
   </section>
 
-  <section id="skills" class="skills">
+
+  <!-- =========================
+       SKILLS
+  ========================== -->
+
+  <section
+    id="skills"
+    class="skills"
+  >
+
     <h2>Skills</h2>
-    <span>Reallusion CC4 and Iclone8</span>
-     <span>Autodesk Maya</span>
+
+    <span>Reallusion CC4 and iClone8</span>
+
+    <span>Autodesk Maya</span>
+
     <span>Blender</span>
+
     <span>Cinema4D</span>
+
     <span>Marvelous Designer</span>
-    <span>Zbrush</span>
+
+    <span>ZBrush</span>
+
     <span>Substance Painter</span>
+
     <span>Unity</span>
-    <span>Unreal</span>
+
+    <span>Unreal Engine</span>
+
     <span>WonderDynamics</span>
 
-    <span>Motion Capture: Pn3, Manus, HTC Vive Ultimate</span>
+    <span>
+      Motion Capture: PN3, Manus, HTC Vive Ultimate
+    </span>
 
-    <span>VR Content Creation: HTC Vive, Oculus Quest2</span>
+    <span>
+      VR Content Creation: HTC Vive, Oculus Quest 2
+    </span>
 
     <span>Website Design</span>
 
     <span>Figma</span>
-     <span>Adobe Photoshop</span>
-     <span>Adobe PremierPro</span>
-     <span>Adobe After Effects</span>
-     <span>Adobe Illustrator</span>
+
+    <span>Adobe Photoshop</span>
+
+    <span>Adobe Premiere Pro</span>
+
+    <span>Adobe After Effects</span>
+
+    <span>Adobe Illustrator</span>
+
     <span>Korean (Level 2)</span>
 
   </section>
 
+
+  <!-- =========================
+       EXPERIENCE
+  ========================== -->
+
   <section id="experience">
- 
-  <h2>Experience</h2>
 
-<div class="job">
-    <h3 style="color: #fff;">Research Scholar</h3>
-    <p><strong>Next Reality Lab</strong> · Full-time</p>
-    <p><em>Jan 2021 – Present | Ajou University, Suwon, South Korea</em></p>
-    <ul>
-      <li>Created customized virtual humans and avatars for VR empathy education, psychological testing and storytelling projects.</li>
-      <li>Led full-body and facial motion capture animation using Faceware, Perception Neuron, and VIVE Ultimate.</li>
-      <li><strong>Tools:</strong> Perception Neuron3, Unity, iClone, CC4, Oculus Quest2</li>
-    </ul>
-  </div>
+    <h2>Experience</h2>
 
-  <hr style="border: 1px solid #333; margin: 2rem 0;">
 
-  <div class="job">
-    <h3 style="color: #fff;">Educational Technology & IT Support Assistant</h3>
-    <p><strong>Ajou University</strong> · Part-time (Teaching Assistant Role)</p>
-    <p><em>Sep 2019 – Jul 2025 | Ajou University, Suwon, South Korea</em></p>
-    <ul>
-      <li>Managed and maintained classroom computers, devices, and software</li>
-      <li>Installed tools and resolved hardware/software issues</li>
-      <li>Assisted faculty and students with software, hardware systems, and tools</li>
-      <li>Scheduled and coordinated room rentals and equipment usage</li>
-      <li>Assisted course delivery by setting up classroom technology, managing equipment, and supporting students with technical issues during class sessions.</li>
-      <li><strong>Skills:</strong> Technical Support</li>
-    </ul>
-  </div>
+    <!-- NxR LAB -->
 
-  <hr style="border: 1px solid #333; margin: 2rem 0;">
+    <div class="job">
 
-  <div class="job">
-    <h3 style="color: #fff;">Research Scholar</h3>
-    <p><strong>Digital Films Lab</strong> · Full-time</p>
-    <p><em>2018 –2020 | Ajou University, Suwon, South Korea</em></p>
-    <ul>
-      <li>Developed Unity-based interactive testing scenarios for projects with basic C# scripting and API integration</li>
-      <li>Produced cinematic sequences in Unreal Engine using Sequencer.</li>
-      <li>Created and edited promotional videos related to academic assignments and lab activities.</li>
-      <li><strong>Tools:</strong> Unity, Perception Neuron3, Manus Polygon Mocap, 3D Content Development & Animation, Graphics Desig, Research & Project Management, Adobe Premier Pro, Unreal Engine, Autodesk Maya, Aftter Effects, Technical Support, Adobe Illustrator</li>
-    </ul>
-  </div>
+      <h3>
+        NxR Lab | Ajou University
+      </h3>
+
+      <p>
+
+        <strong>
+          <em>
+            Ph.D. Research Student
+          </em>
+        </strong>
+
+        &nbsp; 2018 – 2025
+
+      </p>
+
+
+      <ul>
+
+        <li>
+          Developed and integrated virtual-human pipelines combining
+          character creation, motion capture, facial/body animation,
+          and Unity-based real-time interaction for VR research prototypes.
+        </li>
+
+        <li>
+          Developed avatar workflows covering character creation/customization,
+          character animation, motion-capture content, and Unity-based
+          real-time integration.
+        </li>
+
+        <li>
+          Produced body, hand, tracker-based, and facial animation using
+          keyframe and motion-capture workflows; supported retargeting,
+          testing, and troubleshooting.
+        </li>
+
+        <li>
+          Collaborated with professors, researchers, designers, and developers
+          on virtual-human, empathy-training, counseling, learning,
+          and immersive-media projects.
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <hr
+      style="
+        border: 1px solid #333;
+        margin: 2rem 0;
+      "
+    >
+
+
+    <!-- DIGITAL MEDIA -->
+
+    <div class="job">
+
+      <h3>
+        Department of Digital Media | Ajou University
+      </h3>
+
+      <p>
+
+        <strong>
+          <em>
+            IT &amp; EdTech Assistant
+          </em>
+        </strong>
+
+        &nbsp; 2019 – 2025
+
+      </p>
+
+
+      <ul>
+
+        <li>
+          Supported classroom and lab technology operations,
+          presentation systems, equipment workflows, and media-rich
+          academic materials for faculty and students.
+        </li>
+
+      </ul>
+
+    </div>
 
   </section>
 
+
+  <!-- =========================
+       PROJECTS
+  ========================== -->
 
   <section id="projects">
 
-  <h2>Projects</h2>
-   <p><a href="projects.html" target="_blank" style="color: #f00;">View Full Project List</a></p>
- <video autoplay muted loop playsinline style="max-height: 500px; width: auto; object-fit: contain; transform: translateY(10px);">
-    <source src="projectsvideo.mp4" type="video/mp4" />
+    <h2>Projects</h2>
 
-  <p><a href="projects.html" target="_blank" style="color: #f00;">View Full Project List</a></p>
 
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      style="
+        max-height: 500px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        transform: translateY(10px);
+      "
+    >
+
+      <source
+        src="projectsvideo.mp4"
+        type="video/mp4"
+      />
+
+      Your browser does not support the video tag.
+
+    </video>
+
+
+    <!-- ONLY ONE PROJECT LIST LINK -->
+
+    <p>
+
+      <a
+        href="projects.html"
+        target="_blank"
+        class="project-link"
+      >
+        View Full Project List
+      </a>
+
+    </p>
 
   </section>
 
+
+  <!-- =========================
+       PUBLICATIONS
+  ========================== -->
+
   <section id="publications">
+
     <h2>Publications</h2>
+
+
+    <ul>
+
+
+      <li>
+
+        "User Experience of Virtual Human and Immersive Virtual Reality
+        Role-Playing in Psychological Testing and Assessment:
+        A Case Study of ‘EmpathyVR’" – Sensors, MDPI, 2025
+
+        <br>
+
+        <a
+          href="https://doi.org/10.3390/s25092719"
+          target="_blank"
+          class="publication-btn"
+        >
+          Show Publication
+        </a>
+
+      </li>
+
+
+      <li>
+
+        "A Study on the Digital Humans Creation Pipeline for Real-Time Engines"
+        – Korea Institute of Communications and Information Sciences,
+        Jun 1, 2022
+
+        <br>
+
+        <a
+          href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11107723"
+          target="_blank"
+          class="publication-btn"
+        >
+          Show Publication
+        </a>
+
+      </li>
+
+
+      <li>
+
+        "The Advantages of Virtual Reality in Skill Development Training
+        Based on Project Comparison (2009–2018)"
+        – International Journal of Contents, KCI, 2020
+
+        <br>
+
+        <a
+          href="https://doi.org/10.5392/IJoC.2020.16.2.019"
+          target="_blank"
+          class="publication-btn"
+        >
+          Show Publication
+        </a>
+
+      </li>
+
+
+      <li>
+
+        "Poster: VR Content ‘Four Seasons’ for Alzheimer"
+        – International Symposium on Electronic Art, Jun 1, 2019
+
+        <br>
+
+        <a
+          href="https://www.isea-symposium-archives.org/presentation/vr-content-four-seasons-for-alzheimer/"
+          target="_blank"
+          class="publication-btn"
+        >
+          Show Publication
+        </a>
+
+      </li>
+
+
+    </ul>
+
+  </section>
+
+
+  <!-- =========================
+       PATENTS
+  ========================== -->
+
+  <section id="patents">
+
+    <h2>Patents</h2>
+
     <ul>
 
       <li>
-  "User Experience of Virtual Human and Immersive Virtual Reality Role-Playing in Psychological Testing and Assessment: A Case Study of ‘EmpathyVR’" – Sensors, MDPI, 2025
-  <br>
-  <a href="https://doi.org/10.3390/s25092719" target="_blank" style="display:inline-block; margin-top: 0.5rem; padding: 0.4rem 1rem; background: #f00; color: #fff; text-decoration: none; border-radius: 5px;">Show Publication</a>
-</li>
-
-      <li>
-  "A Study on the Digital Humans Creation Pipeline for Real-Time Engines’" – Korea Institute of Communications and Information Sciences · Jun 1, 2022
-  <br>
-  <a href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11107723" target="_blank" style="display:inline-block; margin-top: 0.5rem; padding: 0.4rem 1rem; background: #f00; color: #fff; text-decoration: none; border-radius: 5px;">Show Publication</a>
-</li>
-
-      <li>
-  "The Advantages of Virtual Reality in Skill Development Training Based on Project Comparison (2009-2018)" - International Journal of Contents, KCI, 2020
-  <br>
-  <a href="https://doi.org/10.5392/IJoC.2020.16.2.019" target="_blank" style="display:inline-block; margin-top: 0.5rem; padding: 0.4rem 1rem; background: #f00; color: #fff; text-decoration: none; border-radius: 5px;">Show Publication</a>
-</li>
-
-      <li>
- "Poster: VR Content ‘Four Seasons’ for Alzheimer" - International Symposium on Electronic Art · Jun 1, 2019
-  <br>
-  <a href="https://www.isea-symposium-archives.org/presentation/vr-content-four-seasons-for-alzheimer/" target="_blank" style="display:inline-block; margin-top: 0.5rem; padding: 0.4rem 1rem; background: #f00; color: #fff; text-decoration: none; border-radius: 5px;">Show Publication</a>
-</li>
+        "Avatar Service Method Reflecting Cultural Characteristics,"
+        10-2024-0089087 · Issued Jul 1, 2024
+      </li>
 
     </ul>
-  </section>
-
-  <section id="patents">
-  <h2>Patents</h2>
-  <li>"Avatar Service Method Reflecting Cultural Characteristics, 10-2024-0089087 · Issued Jul 1, 2024</li>
 
   </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
 
   <section id="contact">
+
     <h2>Contact</h2>
-    <p>Email: thapamagarsunny@gmail.com</p>
-    <p>Phone: +82-10-1234-5678</p>
-    <p>LinkedIn: linkedin.com/in/sunny3d</p>
+
+    <p>
+      Email: thapamagarsunny@gmail.com
+    </p>
+
+    <p>
+      Phone: +82-10-1234-5678
+    </p>
+
+    <p>
+      LinkedIn: linkedin.com/in/sunny3d
+    </p>
+
   </section>
 
-  <footer>
-    <p>&copy; 2025 Sunny Magar. All rights reserved.</p>
-  </footer>
-</body>
 
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <p>
+      &copy; 2025 Sunny Magar. All rights reserved.
+    </p>
+
+  </footer>
+
+
+</body>
 
 </html>
