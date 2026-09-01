@@ -300,47 +300,6 @@
 
 
     /* =========================
-       WEBSITE VIEW COUNTER
-    ========================== */
-
-    .view-counter {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 1.2rem;
-    }
-
-    .view-counter-box {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-
-      padding: 8px 18px;
-
-      background: #181818;
-      border: 1px solid #333;
-      border-radius: 6px;
-
-      font-weight: bold;
-    }
-
-    .view-counter-label {
-      color: #ccc;
-      font-size: 0.9rem;
-      letter-spacing: 1px;
-    }
-
-    #view-count {
-      color: #ff0000;
-      font-size: 1.3rem;
-      font-weight: 900;
-      min-width: 20px;
-      text-align: center;
-    }
-
-
-    /* =========================
        FOOTER
     ========================== */
 
@@ -349,6 +308,39 @@
       padding: 2rem;
       background: #111;
       color: #ccc;
+    }
+
+
+    /* =========================
+       WEBSITE VIEW COUNTER
+    ========================== */
+
+    .view-counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .view-counter-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 14px;
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    .view-counter-label {
+      color: #aaa;
+      letter-spacing: 0.5px;
+    }
+
+    #view-count {
+      color: #f00;
+      font-weight: bold;
     }
 
 
@@ -566,18 +558,15 @@
 
       <p>
         At <strong>NxR Lab, Ajou University</strong>, I contributed to virtual-human research,
-        VR games, interactive applications, character creation, animation,
-        motion-capture workflows, and Unity-based content development.
-
-        My research interests include expressive digital humans,
+        VR games, interactive applications, character creation, animation, motion-capture workflows,
+        and Unity-based content development. My research interests include expressive digital humans,
         speech-driven avatars, virtual-human interaction, and immersive HCI.
       </p>
 
       <p>
-        I also have experience in 3D graphics, motion graphics, video production,
-        and multimedia design, using tools such as Blender, Maya,
-        Character Creator, iClone, Unity, Unreal Engine, Photoshop,
-        Illustrator, After Effects, and Premiere Pro.
+        I also have experience in 3D graphics, motion graphics, video production, and multimedia design,
+        using tools such as Blender, Maya, Character Creator, iClone, Unity, Unreal Engine,
+        Photoshop, Illustrator, After Effects, and Premiere Pro.
       </p>
 
     </div>
@@ -647,31 +636,19 @@
        SKILLS
   ========================== -->
 
-  <section
-    id="skills"
-    class="skills"
-  >
+  <section id="skills" class="skills">
 
     <h2>Skills</h2>
 
     <span>Reallusion CC4 and iClone 8</span>
-
     <span>Autodesk Maya</span>
-
     <span>Blender</span>
-
     <span>Cinema4D</span>
-
     <span>Marvelous Designer</span>
-
     <span>ZBrush</span>
-
     <span>Substance Painter</span>
-
     <span>Unity</span>
-
     <span>Unreal Engine</span>
-
     <span>WonderDynamics</span>
 
     <span>
@@ -683,17 +660,11 @@
     </span>
 
     <span>Website Design</span>
-
     <span>Figma</span>
-
     <span>Adobe Photoshop</span>
-
     <span>Adobe Premiere Pro</span>
-
     <span>Adobe After Effects</span>
-
     <span>Adobe Illustrator</span>
-
     <span>Korean (Level 2)</span>
 
   </section>
@@ -707,8 +678,6 @@
 
     <h2>Experience</h2>
 
-
-    <!-- NxR LAB -->
 
     <div class="job">
 
@@ -767,8 +736,6 @@
       "
     >
 
-
-    <!-- DIGITAL MEDIA -->
 
     <div class="job">
 
@@ -862,7 +829,6 @@
 
 
     <ul>
-
 
       <li>
 
@@ -1017,25 +983,17 @@
 
   <footer>
 
-
-    <!-- WEBSITE VIEW COUNTER -->
-
     <div class="view-counter">
 
       <div class="view-counter-box">
 
         <span class="view-counter-label">
-          WEBSITE VIEWS
+          Website Views:
         </span>
 
-        <!--
-          IMPORTANT:
-          It starts at 0.
-          If the online counter cannot load,
-          it will continue displaying 0.
-        -->
-
-        <span id="view-count">0</span>
+        <span id="view-count">
+          0
+        </span>
 
       </div>
 
@@ -1049,137 +1007,66 @@
   </footer>
 
 
+  <!-- =========================
+       GOATCOUNTER TRACKING
+  ========================== -->
 
-  <!-- ==========================================
-       REAL WEBSITE VIEW COUNTER
-  =========================================== -->
+  <script
+    data-goatcounter="https://lenza1.goatcounter.com/count"
+    async
+    src="https://gc.zgo.at/count.js">
+  </script>
+
+
+  <!-- =========================
+       SHOW TOTAL WEBSITE VIEWS
+  ========================== -->
 
   <script>
 
-    /*
-      STEP 1:
+    (function () {
 
-      Create a free GoatCounter account.
-
-      You will receive an address similar to:
-
-      https://sunnyportfolio.goatcounter.com
-
-      If your address is:
-
-      https://sunnyportfolio.goatcounter.com
-
-      then write:
-
-      const GOATCOUNTER_CODE = "sunnyportfolio";
-
-      Until you change it, the website simply
-      displays:
-
-      WEBSITE VIEWS 0
-    */
+      const viewCount =
+        document.getElementById("view-count");
 
 
-    const GOATCOUNTER_CODE = "YOUR-GOATCOUNTER-CODE";
+      /*
+        Always display 0 first.
+      */
+
+      viewCount.textContent = "0";
 
 
-    const viewCountElement =
-      document.getElementById("view-count");
+      /*
+        Request the TOTAL number of views
+        stored by GoatCounter.
+      */
 
+      function loadPublicCount() {
 
-    /*
-      Always start at zero.
-    */
+        fetch(
+          "https://lenza1.goatcounter.com/counter/TOTAL.json",
+          {
+            cache: "no-store"
+          }
+        )
 
-    viewCountElement.textContent = "0";
-
-
-
-    /*
-      Only activate the online counter after
-      YOUR-GOATCOUNTER-CODE has been replaced.
-    */
-
-    if (
-      GOATCOUNTER_CODE &&
-      GOATCOUNTER_CODE !== "YOUR-GOATCOUNTER-CODE"
-    ) {
-
-
-      /* ==========================================
-         LOAD GOATCOUNTER TRACKING
-      =========================================== */
-
-      const goatCounterScript =
-        document.createElement("script");
-
-
-      goatCounterScript.src =
-        "https://gc.zgo.at/count.js";
-
-
-      goatCounterScript.async = true;
-
-
-      goatCounterScript.setAttribute(
-
-        "data-goatcounter",
-
-        "https://" +
-        GOATCOUNTER_CODE +
-        ".goatcounter.com/count"
-
-      );
-
-
-      document.body.appendChild(
-        goatCounterScript
-      );
-
-
-
-      /* ==========================================
-         GET TOTAL WEBSITE VIEWS
-      =========================================== */
-
-      function loadWebsiteViews() {
-
-
-        const counterURL =
-
-          "https://" +
-          GOATCOUNTER_CODE +
-          ".goatcounter.com/counter/TOTAL.json";
-
-
-        fetch(counterURL)
-
-          .then(function(response) {
-
+          .then(function (response) {
 
             if (!response.ok) {
 
               throw new Error(
-                "Counter could not be loaded"
+                "Counter unavailable"
               );
 
             }
-
 
             return response.json();
 
           })
 
 
-          .then(function(data) {
-
-
-            /*
-              If GoatCounter returns a number,
-              display it.
-
-              Otherwise display 0.
-            */
+          .then(function (data) {
 
             if (
               data &&
@@ -1187,77 +1074,37 @@
               data.count !== null
             ) {
 
-              viewCountElement.textContent =
+              viewCount.textContent =
                 data.count;
 
             }
 
             else {
 
-              viewCountElement.textContent = "0";
+              viewCount.textContent = "0";
 
             }
 
           })
 
 
-          .catch(function(error) {
-
+          .catch(function () {
 
             /*
-              Internet problem,
-              counter unavailable,
-              or no data:
-
-              Keep displaying 0.
+              If GoatCounter cannot be reached,
+              keep displaying zero.
             */
 
-            viewCountElement.textContent = "0";
-
-
-            console.log(
-              "Website counter:",
-              error
-            );
+            viewCount.textContent = "0";
 
           });
 
       }
 
 
+      loadPublicCount();
 
-      /*
-        Give the tracking script a moment
-        to register the visit first.
-      */
-
-      goatCounterScript.addEventListener(
-        "load",
-        function() {
-
-          setTimeout(
-            loadWebsiteViews,
-            1000
-          );
-
-        }
-      );
-
-
-
-      /*
-        Fallback:
-        also try loading the number after
-        a short delay.
-      */
-
-      setTimeout(
-        loadWebsiteViews,
-        2500
-      );
-
-    }
-
+    })();
 
   </script>
 
